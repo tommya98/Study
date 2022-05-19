@@ -1,11 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define MAX 100000001
-
-  int arr[5000000]; //결과값 저장
-  int arr2[5000000]; // 입력 저장
-
 int main() {
   ios::sync_with_stdio(0);
   cin.tie(0);
