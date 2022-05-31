@@ -41,7 +41,7 @@
 | [7576. 토마토](https://www.acmicpc.net/problem/7576)         | [7576.cpp](https://github.com/tommya98/Coding-test/blob/main/Baekjoon%20code/7576.cpp) |
 | [4179. 불!](https://www.acmicpc.net/problem/4179)            | [4179.cpp](https://github.com/tommya98/Coding-test/blob/main/Baekjoon%20code/4179.cpp) |
 | [1697. 숨바꼭질](https://www.acmicpc.net/problem/1697)       | [1697.cpp](https://github.com/tommya98/Coding-test/blob/main/Baekjoon%20code/1697.cpp) |
-| [1012. 유기농 배추](https://www.acmicpc.net/problem/1012)    | -                                                            |
+| [1012. 유기농 배추](https://www.acmicpc.net/problem/1012)    | [1012.cpp](https://github.com/tommya98/Coding-test/blob/main/Baekjoon%20code/1012.cpp) |
 | [10026. 적록색약](https://www.acmicpc.net/problem/10026)     | -                                                            |
 | [7569. 토마토](https://www.acmicpc.net/problem/7569)         | -                                                            |
 | [7562. 나이트의 이동](https://www.acmicpc.net/problem/7562)  | -                                                            |
