@@ -45,7 +45,7 @@
 | [10026. 적록색약](https://www.acmicpc.net/problem/10026)     | [10026.cpp](https://github.com/tommya98/Coding-test/blob/main/Baekjoon%20code/10026.cpp) |
 | [7569. 토마토](https://www.acmicpc.net/problem/7569)         | [7569.cpp](https://github.com/tommya98/Coding-test/blob/main/Baekjoon%20code/7569.cpp) |
 | [7562. 나이트의 이동](https://www.acmicpc.net/problem/7562)  | [7562.cpp](https://github.com/tommya98/Coding-test/blob/main/Baekjoon%20code/7562.cpp) |
-| [5427. 불](https://www.acmicpc.net/problem/5427)             | -                                                            |
+| [5427. 불](https://www.acmicpc.net/problem/5427)             | [5427.cpp](https://github.com/tommya98/Coding-test/blob/main/Baekjoon%20code/5427.cpp) |
 | [2583. 영역 구하기](https://www.acmicpc.net/problem/2583)    | -                                                            |
 | [2667. 단지번호붙이기](https://www.acmicpc.net/problem/2667) | -                                                            |
 | [5014. 스타트링크](https://www.acmicpc.net/problem/5014)     | -                                                            |
