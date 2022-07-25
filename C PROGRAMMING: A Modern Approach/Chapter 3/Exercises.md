@@ -26,7 +26,8 @@
 
 5. `x = 12.3, i = 45, y = 0.6`
 
-6. ```c
+6. 
+   ```c
    #include <stdio.h>
    
    int main(void) {
