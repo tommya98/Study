@@ -76,7 +76,7 @@
 
     (d) 6 15
 
-13. ++i is exactly the same as (i += 1);
+13. `++i` is exactly the same as `(i += 1);`
 
 14. (a) `(((a * b) - (c * d)) + e)`
 
