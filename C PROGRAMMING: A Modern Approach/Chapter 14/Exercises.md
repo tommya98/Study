@@ -36,4 +36,94 @@
    #define LINE_FILE ("Line " STR(__LINE__) " of file " __FILE__)
    ```
 
-9. 
+9. (a) `#define CHECK(x, y, n) ((((x) >= 0) && ((x) <= ((n) - 1))) && (((y) >= 0) && ((y) <= ((n) - 1)))) ? 1 : 0`
+
+   (b) `#define MEDIAN(x, y, z) (((x) + (y) + (z)) / 3)`
+
+   (c) `define POLYNOMIAL(x) (3 * (x) * (x) * (x) * (x) * (x) + 2 * (x) * (x) * (x) * (x) - 5 * (x) * (x) * (x) - (x) * (x) + 7 * (x) - 6`
+
+10. If parameter like `i++` can be evaluated multiple times when we use macro.
+
+11. `#define ERROR(s, i) fprintf(stderr, s, i)`
+
+12. (c), (e)
+
+13. (a) 
+
+    ```c
+    
+    
+    
+    
+    void f(void);
+    
+    int main(void)
+    {
+      f();
+    
+    
+    
+      return 0;
+    }
+    
+    void f(void)
+    {
+    
+    
+    
+      printf("N is undefined\n");
+    
+    }
+    ```
+
+    (b) N is undefined
+
+14. ```c
+    
+    
+    
+    
+    
+    
+    
+    
+    int main(void)
+    {
+      int a[= 10], i, j, k, m;
+    
+    
+      i = j;
+    
+    
+    
+    
+      i = 10 * j+1;
+      i = (x,y) x-y(j, k);
+      i = ((((j)*(j)))*(((j)*(j))));
+      i = (((j)*(j))*(j));
+      i = jk;
+      puts("i" "j");
+    
+    
+      i = SQR(j);
+    
+      i = (j);
+    
+      return 0;
+    }
+    ```
+
+    `int a[= 10], i, j, k, m;`, `i = (x,y) x-y(j, k);`, `i = jk;` can cause errors.
+
+15. ```c
+    #ifdef ENGLISH
+      printf("Insert disk 1\n");
+    #elif defined(FRENCH)
+      printf("Inserez Le Disque 1\n");
+    #elif defined(SPANISH)
+      printf("Inserte El dISCO 1\N");
+    #endif
+    ```
+
+16. `#pragma ident foo`
+
