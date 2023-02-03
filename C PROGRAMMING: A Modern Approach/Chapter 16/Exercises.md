@@ -465,4 +465,72 @@
     }
     ```
 
-15. 
+15. (a) `enum days {MON, TUE, WED, THU, FRI, SAT, SUN};`
+
+    (b) `typedef enum {MON, TUE, WED, THU, FRI, SAT, SUN} Days;`
+
+16. (a), (c), (e) is true.
+
+17. All statements are legal. And (a), (d), (e) is safe.
+
+18. (a)
+
+    ```c
+    typedef enum {PAWN, KNIGHT, BISHOP, ROOK, QUEEN, KING, EMPTY} Piece;
+    typedef enum {BLACK, WHITE} Color;
+    ```
+
+    (b)
+
+    ```c
+    typedef struct {
+      Piece piece;
+      Color color;
+    } Square;
+    ```
+
+    (c) `Square board[8][8];`
+
+    (d)
+
+    ```c
+    Square[8][8] board = {{{ROOK,  WHITE}, {KNIGHT, WHITE}, {BISHOP, WHITE}, {QUEEN, WHITE}, {KING,  WHITE}, {BISHOP, WHITE}, {KNIGHT, WHITE}, {ROOK,  WHITE}}, {{PAWN,  WHITE}, {PAWN,   WHITE}, {PAWN,   WHITE}, {PAWN,  WHITE}, {PAWN,  WHITE}, {PAWN,   WHITE}, {PAWN,   WHITE}, {PAWN,  WHITE}}, {{EMPTY, BLACK}, {EMPTY,  BLACK}, {EMPTY,  BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY,  BLACK}, {EMPTY,  BLACK}, {EMPTY, BLACK}}, {{EMPTY, BLACK}, {EMPTY,  BLACK}, {EMPTY,  BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY,  BLACK}, {EMPTY,  BLACK}, {EMPTY, BLACK}}, {{EMPTY, BLACK}, {EMPTY,  BLACK}, {EMPTY,  BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY,  BLACK}, {EMPTY,  BLACK}, {EMPTY, BLACK}}, {{PAWN,  BLACK}, {PAWN,   BLACK}, {PAWN,   BLACK}, {PAWN,  BLACK}, {PAWN,  BLACK}, {PAWN,   BLACK}, {PAWN,   BLACK}, {PAWN,  BLACK}}, {{ROOK,  BLACK}, {KNIGHT, BLACK}, {BISHOP, BLACK}, {QUEEN, BLACK}, {KING,  BLACK}, {BISHOP, BLACK}, {KNIGHT, BLACK}, {ROOK,  BLACK}}};
+    ```
+
+19. ```c
+    struct pinball_machine {
+      char name[40];
+      int year;
+      enum {EM, SS} type;
+      int players;
+    };
+    ```
+
+20. ```c
+    switch(direction) {
+      case NORTH:
+        y--;
+        break;
+      case SOUTH:
+        y++;
+        break;
+      case EAST:
+        x++;
+        break;
+      case WEST:
+        x--;
+        break;
+    }
+    ```
+
+21. (a) 0, 1, 2, 3
+
+    (b) 11, 12, 13
+
+    (c) 14, 15, 16, 24, 25
+
+    (d) 45, 56, 57, 37, 38, 39
+
+22. (a) `const int piece_value[6] = {200, 9, 5, 3, 3, 1};`
+
+    (b) `const int piece_value[6] = {[KING] = 200, [QUEEN] = 9, [ROOK] = 5, [BISHOP] = 3, [KNIGHT] = 3, [PAWN] = 1};`
