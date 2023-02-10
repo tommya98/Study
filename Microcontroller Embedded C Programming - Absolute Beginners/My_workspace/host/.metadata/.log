@@ -943,3 +943,29 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2023-02-08 17:59:17.811 -----------------------------------------------
+eclipse.buildId=Version 1.11.0
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -keyring /Users/seokhun/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/seokhun/Desktop/coding/Embedded/Microcontroller Embedded C Programming - Absolute Beginners/My_workspace/host -keyring /Users/seokhun/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-02-08 17:59:25.234
+!MESSAGE Log4j initialized with config file /Users/seokhun/Desktop/coding/Embedded/Microcontroller Embedded C Programming - Absolute Beginners/My_workspace/host/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-02-08 17:59:31.812
+!MESSAGE Started RMI Server, listening on port 41338
+!SESSION 2023-02-09 15:59:20.175 -----------------------------------------------
+eclipse.buildId=Version 1.11.0
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -keyring /Users/seokhun/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/seokhun/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-02-09 15:59:35.883
+!MESSAGE Log4j initialized with config file /Users/seokhun/Desktop/coding/Embedded/Microcontroller Embedded C Programming - Absolute Beginners/My_workspace/host/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-02-09 15:59:42.936
+!MESSAGE Started RMI Server, listening on port 41337
