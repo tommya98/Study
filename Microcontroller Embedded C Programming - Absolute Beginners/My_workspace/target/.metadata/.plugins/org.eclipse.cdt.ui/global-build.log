@@ -1,16 +1,21 @@
-12:37:38 **** Incremental Build of configuration Debug for project 006pin_read ****
+10:22:17 **** Build of configuration Debug for project 007volatile ****
 make -j7 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O1 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "006pin_read.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/seokhun/Desktop/coding/Embedded/Microcontroller Embedded C Programming - Absolute Beginners/My_workspace/target/006pin_read/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006pin_read.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 006pin_read.elf
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:28:19: warning: variable 'data2' set but not used [-Wunused-but-set-variable]
+   28 |  uint8_t volatile data2;
+      |                   ^~~~~
+arm-none-eabi-gcc -o "007volatile.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/seokhun/Desktop/coding/Embedded/Microcontroller Embedded C Programming - Absolute Beginners/My_workspace/target/007volatile/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007volatile.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 007volatile.elf
  
-arm-none-eabi-size   006pin_read.elf 
-arm-none-eabi-objdump -h -S  006pin_read.elf  > "006pin_read.list"
+arm-none-eabi-size   007volatile.elf 
+arm-none-eabi-objdump -h -S  007volatile.elf  > "007volatile.list"
    text	   data	    bss	    dec	    hex	filename
-    740	      8	   1568	   2316	    90c	006pin_read.elf
+    692	      8	   1568	   2268	    8dc	007volatile.elf
 Finished building: default.size.stdout
  
-Finished building: 006pin_read.list
+Finished building: 007volatile.list
  
