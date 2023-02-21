@@ -4,7 +4,7 @@
    
    #include <stdbool.h>
    
-   typedef strcut queue_type *Queue;
+   typedef struct queue_type *Queue;
    
    void insert(Queue q, int i);
    void remove(Queue q);
