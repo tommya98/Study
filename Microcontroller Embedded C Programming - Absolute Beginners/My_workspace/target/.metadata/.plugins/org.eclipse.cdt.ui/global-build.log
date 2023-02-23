@@ -1,63 +1,7 @@
-20:49:08 **** Incremental Build of configuration Debug for project 009packed_Vsnonpacked ****
+15:27:51 **** Incremental Build of configuration Debug for project 010led_toggle_bitfields ****
 make -j7 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "009packed_Vsnonpacked.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/seokhun/Desktop/coding/Embedded/Microcontroller Embedded C Programming - Absolute Beginners/My_workspace/target/009packed_Vsnonpacked/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009packed_Vsnonpacked.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 009packed_Vsnonpacked.elf
- 
-arm-none-eabi-size   009packed_Vsnonpacked.elf 
-arm-none-eabi-objdump -h -S  009packed_Vsnonpacked.elf  > "009packed_Vsnonpacked.list"
+arm-none-eabi-size   010led_toggle_bitfields.elf 
    text	   data	    bss	    dec	    hex	filename
-   5392	    108	   1596	   7096	   1bb8	009packed_Vsnonpacked.elf
-Finished building: default.size.stdout
- 
-Finished building: 009packed_Vsnonpacked.list
- 
-20:49:17 **** Incremental Build of configuration Debug for project 009packed_Vsnonpacked ****
-make -j7 all 
-arm-none-eabi-size   009packed_Vsnonpacked.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5392	    108	   1596	   7096	   1bb8	009packed_Vsnonpacked.elf
-Finished building: default.size.stdout
- 
-20:51:35 **** Incremental Build of configuration Debug for project 009packed_Vsnonpacked ****
-make -j7 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "009packed_Vsnonpacked.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/seokhun/Desktop/coding/Embedded/Microcontroller Embedded C Programming - Absolute Beginners/My_workspace/target/009packed_Vsnonpacked/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009packed_Vsnonpacked.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 009packed_Vsnonpacked.elf
- 
-arm-none-eabi-size   009packed_Vsnonpacked.elf 
-arm-none-eabi-objdump -h -S  009packed_Vsnonpacked.elf  > "009packed_Vsnonpacked.list"
-   text	   data	    bss	    dec	    hex	filename
-   5412	    108	   1596	   7116	   1bcc	009packed_Vsnonpacked.elf
-Finished building: default.size.stdout
- 
-Finished building: 009packed_Vsnonpacked.list
- 
-20:56:22 **** Incremental Build of configuration Debug for project 009packed_Vsnonpacked ****
-make -j7 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "009packed_Vsnonpacked.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/seokhun/Desktop/coding/Embedded/Microcontroller Embedded C Programming - Absolute Beginners/My_workspace/target/009packed_Vsnonpacked/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009packed_Vsnonpacked.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 009packed_Vsnonpacked.elf
- 
-arm-none-eabi-size   009packed_Vsnonpacked.elf 
-arm-none-eabi-objdump -h -S  009packed_Vsnonpacked.elf  > "009packed_Vsnonpacked.list"
-   text	   data	    bss	    dec	    hex	filename
-   5392	    108	   1596	   7096	   1bb8	009packed_Vsnonpacked.elf
-Finished building: default.size.stdout
- 
-Finished building: 009packed_Vsnonpacked.list
- 
-20:56:52 **** Incremental Build of configuration Debug for project 008button_ISR ****
-make -j7 all 
-arm-none-eabi-size   008button_ISR.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5576	    132	   1596	   7304	   1c88	008button_ISR.elf
-Finished building: default.size.stdout
- 
-20:57:10 **** Incremental Build of configuration Debug for project 009packed_Vsnonpacked ****
-make -j7 all 
-arm-none-eabi-size   009packed_Vsnonpacked.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5392	    108	   1596	   7096	   1bb8	009packed_Vsnonpacked.elf
+    788	      8	   1568	   2364	    93c	010led_toggle_bitfields.elf
 Finished building: default.size.stdout
  
