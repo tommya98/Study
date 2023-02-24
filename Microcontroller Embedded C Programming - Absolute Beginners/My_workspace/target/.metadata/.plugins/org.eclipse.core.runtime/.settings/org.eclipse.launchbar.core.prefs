@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002Sizeof Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004led_on,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005led_toggle,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006pin_read,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007volatile,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008button_ISR,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:009packed_Vsnonpacked
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002Sizeof Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004led_on,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005led_toggle,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006pin_read,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007volatile,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008button_ISR,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:009packed_Vsnonpacked,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:010led_toggle_bitfields
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld\ Debug/activeLaunchTarget=null\:---
