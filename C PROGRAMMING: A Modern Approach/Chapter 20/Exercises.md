@@ -74,23 +74,21 @@
    ```
 
 10. ```c
-   unsigned int reverse_bits(unsigned int n) {
+      unsigned int reverse_bits(unsigned int n) {
      unsigned int temp = 0;
-   
+      
      for(int i = 0; i < 32; i++) {
        temp |= ((n & 0x01) << (31 - i));
        n = n >> 1;
      }
-   
+      
      return temp;
-   }
-   ```
-
+      }
 11. Because == has higher precedence than &.
 
     ```c
     if((key_code & (SHIFT_BIT | CTRL_BIT | ALT_BIT)) == 0) {
-        printf("No modifier keys pressed\n");
+    	printf("No modifier keys pressed\n");
     }
     ```
 
@@ -135,3 +133,4 @@
     ```
 
     
+
