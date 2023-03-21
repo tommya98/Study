@@ -65,4 +65,94 @@
 
 11. Program will compile without an error. putc always write `1` to the dest_fp. 
 
-12. 
+12. If `fgetc(fp) == '.'` statement gets EOF, file will make error.
+
+    ```c
+    int count_periods(const char *filename) {
+      FILE *fp;
+      int n = 0;
+      char ch;
+        
+      if((fp = foepn(filename, "r")) != NULL) {
+        while((ch = fgetc(fp)) != EOF) {
+          if(ch == '.') {
+            n++;
+          }
+        }
+        fclose(fp);
+      }
+        
+      return n;
+    }
+    ```
+
+13. ```c
+    int line_length(const char *filename, int n) {
+      FILE *fp;
+      int a = 1, b = 0;
+      char ch;
+        
+      if((fp = fopen(filename, "r")) != NULL) {
+        while((ch = fgetc(fp)) != EOF) {
+          if(ch == '\n') {
+            a++;
+          }
+          else if(a == n) {
+            b++;
+          }
+        }
+      }
+    
+      return b;
+    }
+    ```
+
+14. (a)
+
+    ```c
+    char *my_fgets(char *s, int n, FILE *stream){
+      int ch, len = 0;
+    
+      while(len < n - 1) {
+        if((ch = getc(stream)) == EOF) {
+          if(len == 0 || ferror(stream)) {
+            return NULL;
+          }
+          break;
+        }
+        s[len++] = ch;
+        if(ch == '\n') {
+          break;
+        }
+      }
+    
+      s[len] = '\0';
+      
+      return s;
+    }
+    ```
+
+    (b)
+
+    ```c
+    int my_fputs(const char *s, FILE *stream) {
+      while(*s != '\0') {
+        if(putc(*s, stream) == EOF) {
+          return EOF;
+        }
+        s++;
+      }
+    
+      return 0;
+    }
+    ```
+
+15. (a) `fseek(fp, n * 64L, SEEK_SET);`
+
+    (b) `fseek(fp, -64L, SEEK_END);`
+
+    (c) `fseek(fp, 64L, SEEK_CUR);`
+
+    (d) `fseek(fp, -128L, SEEK_CUR);`
+
+16. `sscanf(str, str[0] == '#' ? "%*[#]%[0123456789,]" : "%*[^#]*[#]%[0123456789,]", sales_rank);`
